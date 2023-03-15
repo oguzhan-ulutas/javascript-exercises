@@ -3,16 +3,16 @@ const sumAll = function(a, b) {
     let sum = 0;
 
     if (typeof(a) != "number" || typeof(b) != "number") {
-        sum = "ERROR"
+        return "ERROR";
     } else if (a < 0 || b < 0) {
-        sum = "ERROR"
+        return "ERROR";
     } else if (a < b && a >= 0 && b >= 0) {
         for (a; a <= b; a++) {
             sum += a;
         } 
     } else if (a > b && a >= 0 && b >= 0) {
         for (b; b <= a; b++) {
-            sum += b
+            sum += b;
         }
     }
 
